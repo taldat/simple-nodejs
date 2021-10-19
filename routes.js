@@ -10,5 +10,5 @@ module.exports = function(app) {
     router.patch('/update/:id', update)
     router.delete('/delete/:id', destroy)
 
-    app.use('/event', router)
+    app.use('/', router)
 }
